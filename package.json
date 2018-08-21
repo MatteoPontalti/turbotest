@@ -1,22 +1,25 @@
 {
-  "name": "xsnsa",
+  "name": "TurboBot",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MatteoPontalti/turbotest.git"
-  },
-  "author": "Pontalti Matteo <matteo.pontalti@studenti.unitn.it>",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MatteoPontalti/turbotest/issues"
-  },
-  "homepage": "https://github.com/MatteoPontalti/turbotest#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "apiai": "^4.0.3",
+    "arraylist": "^0.1.0",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.1.3",
+    "express": "^4.16.3",
+    "socket.io": "^2.1.1",
+    "talkify-tts": "^2.1.2"
+  },
+  "devDependencies": {
+    "jest": "^23.4.1",
+    "node-fetch": "^2.1.2"
   }
 }

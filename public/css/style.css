@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+	background: #E7E3E2;
+    font: 13px Helvetica, Arial;
+
+}
+
+form {
+    background: #662648;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+form textarea {
+    border: 0;
+    padding: 10px;
+    width: 80%;
+    margin-right: .1%;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    resize: none;
+}
+
+form button {
+    width: 15%;
+    background: #E7E3E2;
+    border: none;
+    padding: 10px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    position: fixed;
+}
+
+form img{
+  width: 33px;
+  height: 33px;
+  position: relative;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  margin-right: .5%;
+}
+
+#unitn {
+	text-align: center;
+	margin-top: 25px;
+}
+
+#chatbox {
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+    position: relative;
+
+    top:10px;
+    animation-name: animazione;
+    animation-duration: 5s;
+    max-height:400px;
+    overflow: auto;
+    margin-bottom: 60px;
+
+}
+
+@keyframes animazione{
+    from{ top: 150px;}
+    to{top:10px;}
+
+}
+
+#messages {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+
+}
+
+#messages li {
+    padding: 5px 10px;
+
+}
+
+#messages li:nth-child(odd) {
+    background: #eee;
+
+}
+
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+
+}
+
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+.container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+
+}
+
+.container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+}
+
