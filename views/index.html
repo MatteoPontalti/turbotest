@@ -4,7 +4,7 @@
     <title>TrentoBot Chat</title>
     <link rel="stylesheet" href="css/style.css">
     <head>
-  <link rel="stylesheet" type="css/googlebutton.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
   <script src="https://apis.google.com/js/api:client.js"></script>
   <script>
   
@@ -33,15 +33,17 @@
   }
   </script>
   
+  </style>	
 </head>
 <body>
-<div id="gSignInWrapper">
-    <span class="label">Sign in with:</span>
-    <div id="customBtn" class="customGPlusSignIn">
-      <span class="icon"></span>
-      <span class="google-button">Google</span>
-    </div>
-  </div>
+<div class="btn white darken-4 col s10 m4">
+     <a href="/users/google-oauth/" style="text-transform:none">
+         <div class="left">
+             <img width="20px" alt="Google &quot;G&quot; Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"/>
+         </div>
+         Login with Google
+     </a>
+</div>
   <div id="name"></div>
   <script>startApp();</script>
   <a href="#" onclick="signOut();">Sign out</a>
