@@ -7,6 +7,9 @@ bodyParser = require('body-parser');
 const APIAI_TOKEN = env.APIAI_TOKEN;
 const apiai = require('apiai')(APIAI_TOKEN);
 const ArrayList = require('arraylist');
+const questions = ["Scadenza tasse","Iscrizione"];
+var profile = require ('./public/js/signin.js');
+
 
 app.use('/', express.static(__dirname + '/views')); // html
 app.use(express.static(__dirname + '/public')); // js, css, images
@@ -73,6 +76,20 @@ api.post('/', function (req, res){
     });
     apiaiReq.end();
 })
+
+
+
+api.get('/help', function (req, res){
+   
+        res.status=200
+        console.log(profile.name)
+        res.send("Caro Studente,ad oggi le possibili richieste che puoi fare riguardano: "+(questions))
+        
+        })
+
+
+
+
 
 api.get('/:question', function (req, res){
     var sessionId =uniqueSession(sessionList)
