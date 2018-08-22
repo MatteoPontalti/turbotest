@@ -75,13 +75,25 @@ span.icon {
 a.signout{
 	color:#000000;
 	font-family: 'Arial';
-	font-size:15px;
+	font-size:12px;
 	font-weight: bold;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	text-align:center;
 	display: inline-block;
 	padding:5px;
+}
+
+div.nome{
+    color:#000000;
+    font-family: 'Arial';
+    font-size:12px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align:center;
+    display: inline-block;
+    padding:5px;
 }
 
 #googleButton{
