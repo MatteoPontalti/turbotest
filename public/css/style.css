@@ -2,13 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
 	background: #E7E3E2;
     font: 13px Helvetica, Arial;
-
 }
 
 form {
@@ -17,7 +15,6 @@ form {
     position: fixed;
     bottom: 0;
     width: 100%;
-
 }
 
 form textarea {
@@ -42,7 +39,7 @@ form button {
     position: fixed;
 }
 
-form img{
+form img {
   width: 33px;
   height: 33px;
   position: relative;
@@ -51,11 +48,13 @@ form img{
   border-radius: 8px;
   margin-right: .5%;
 }
+
 span.buttonArea{
 	padding-top: 10px;
 	width: 40px;
 	height: 20px;
 }
+
 span.buttonText {
       display: inline-block;
       text-align: center;
@@ -71,8 +70,9 @@ span.icon {
       orizontal-align: middle;
       width: 42px;
       height: 42px;
-    }
-a.signout{
+}
+
+a.signout {
 	color:#000000;
 	font-family: 'Arial';
 	font-size:12px;
@@ -84,7 +84,7 @@ a.signout{
 	padding:5px;
 }
 
-div.nome{
+div.nome {
     color:#000000;
     font-family: 'Arial';
     font-size:12px;
@@ -96,7 +96,7 @@ div.nome{
     padding:5px;
 }
 
-#googleButton{
+#googleButton {
 	padding-top: 10px;
 	text-align: center;
     background: white;
@@ -105,8 +105,6 @@ div.nome{
     border-radius: 5px;
     border: thin solid #888;
     box-shadow: 1px 1px 1px grey;
-    
-
 }
 
 #unitn {
@@ -122,38 +120,32 @@ div.nome{
     margin-left: 5%;
     width: 90%;
     position: relative;
-
     top:10px;
     animation-name: animazione;
     animation-duration: 5s;
     max-height:400px;
     overflow: auto;
     margin-bottom: 60px;
-
 }
 
 
 @keyframes animazione{
     from{ top: 150px;}
     to{top:10px;}
-
 }
 
 #messages {
     list-style-type: none;
     margin: 0; 
     padding: 0;
-
 }
 
 #messages li {
     padding: 5px 10px;
-
 }
 
 #messages li:nth-child(odd) {
     background: #eee;
-
 }
 
 .container {
@@ -162,20 +154,17 @@ div.nome{
     border-radius: 5px;
     padding: 10px;
     margin: 10px 0;
-
 }
 
 .darker {
     border-color: #ccc;
     background-color: #ddd;
-
 }
 
 .container::after {
     content: "";
     clear: both;
     display: table;
-
 }
 
 .container img {
@@ -184,7 +173,6 @@ div.nome{
     width: 100%;
     margin-right: 20px;
     border-radius: 50%;
-
 }
 
 .container img.right {
