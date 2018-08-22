@@ -82,7 +82,7 @@ api.post('/', function (req, res){
 api.get('/help', function (req, res){
    
         res.status=200
-        console.log(profile.name)
+        res.send(profile.name)
         res.send("Caro Studente,ad oggi le possibili richieste che puoi fare riguardano: "+(questions))
         
         })
