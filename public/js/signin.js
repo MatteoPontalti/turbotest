@@ -4,7 +4,7 @@ var googleUser = {};
     gapi.load('auth2', function(){
       // Retrieve the singleton for the GoogleAuth library and set up the client.
       auth2 = gapi.auth2.init({
-        client_id: '306163354645-8pp6iga4tc0fn8trem3j3gapbnhaalco.apps.googleusercontent.com'
+        client_id: '306163354645-81dnh3h4ott3t61ru0vsjtgdcg2q326j.apps.googleusercontent.com'
         // Request scopes in addition to 'profile' and 'email'
         //scope: 'additional_scope'
       });
