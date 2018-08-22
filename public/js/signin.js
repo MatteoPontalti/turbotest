@@ -16,13 +16,14 @@ var googleUser = {};
     console.log(element.id);
     auth2.attachClickHandler(element, {},
         function(googleUser) {
-            const profile= { name: "googleUser.getBasicProfile().getName()", email : "googleUser.getBasicProfile().getEmail()", id :"googleUser.getBasicProfile().getId()", image :"googleUser.getBasicProfile().getImageUrl()"}
+            
            
           document.getElementById('name').innerText = "Signed in: " +
               googleUser.getBasicProfile().getName();
         }, function(error) {
           alert(JSON.stringify(error, undefined, 2));
         });
+  }
   
-  module.exports =profile;
-}
+  profile= { name: "googleUser.getBasicProfile().getName()", email : "googleUser.getBasicProfile().getEmail()", id :"googleUser.getBasicProfile().getId()", image :"googleUser.getBasicProfile().getImageUrl()"}
+  module.exports = profile;
