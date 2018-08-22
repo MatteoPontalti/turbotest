@@ -25,5 +25,5 @@ var googleUser = {};
         });
   }
   
-  profile= { name: "googleUser.getBasicProfile().getName()", email : "googleUser.getBasicProfile().getEmail()", id :"googleUser.getBasicProfile().getId()", image :"googleUser.getBasicProfile().getImageUrl()"}
+  var profile= { name: "googleUser.getBasicProfile().getName()", email : "googleUser.getBasicProfile().getEmail()", id :"googleUser.getBasicProfile().getId()", image :"googleUser.getBasicProfile().getImageUrl()"}
   module.exports = profile;
