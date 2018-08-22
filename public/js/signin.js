@@ -16,7 +16,8 @@ var googleUser = {};
     console.log(element.id);
     auth2.attachClickHandler(element, {},
         function(googleUser) {
-            
+           var profile= { name: "googleUser.getBasicProfile().getName()", email : "googleUser.getBasicProfile().getEmail()", id :"googleUser.getBasicProfile().getId()", image :"googleUser.getBasicProfile().getImageUrl()"}
+            module.exports = profile; 
            
           document.getElementById('name').innerText = "Signed in: " +
               googleUser.getBasicProfile().getName();
@@ -25,5 +26,4 @@ var googleUser = {};
         });
   }
   
-  var profile= { name: "googleUser.getBasicProfile().getName()", email : "googleUser.getBasicProfile().getEmail()", id :"googleUser.getBasicProfile().getId()", image :"googleUser.getBasicProfile().getImageUrl()"}
-  module.exports = profile;
+  
