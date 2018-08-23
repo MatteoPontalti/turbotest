@@ -17,6 +17,10 @@
   </div>
   <div id="name" class="name" align="center"></div>
   
+  <div id="guest"  align="center">
+  <a class="guest" href="#" onclick="signGuest();">Sign in like a Guest</a>
+</div>
+  
   <div id="logout"  align="center">
   <a class="signout" href="#" onclick="signOut();">Sign out</a>
 </div>
@@ -27,7 +31,7 @@
 <div id="chatbox">
 </div>
 <form action="">
-    <textarea type="text" id="m" placeholder="Fammi una domanda..." autocomplete="off" rows="1"></textarea>
+    <textarea type="text" id="m" placeholder="Fammi una domanda..." autocomplete="off" rows="1" disabled="true"></textarea>
   <img src="img/mic.png" onclick="speak();">
     <button>Invia</button>
 </form>

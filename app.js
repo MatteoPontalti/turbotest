@@ -61,6 +61,7 @@ app.use(function (req, res, next) {
 });
 
 var api = express.Router();
+
 api.post('/', function (req, res){
     var sessionId =uniqueSession(sessionList)
     var apiaiReq = apiai.textRequest(req.body.question, {
@@ -82,10 +83,9 @@ api.post('/', function (req, res){
 api.get('/help', function (req, res){
    
         res.status=200
-      
-        res.send("Caro Studente,ad oggi le possibili richieste che puoi fare riguardano: "+(questions))
-        console.log(profile);
         
+        res.send("Caro Studente,ad oggi le possibili richieste che puoi fare riguardano: "+(questions))
+        console.log(profile.name)
         })
 
 
