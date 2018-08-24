@@ -10,7 +10,6 @@ const ArrayList = require('arraylist');
 const questions = ["Scadenza tasse","Iscrizione"];
 var profile = require ('./public/js/signin.js');
 
-
 app.use('/', express.static(__dirname + '/views')); // html
 app.use(express.static(__dirname + '/public')); // js, css, images
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -25,7 +24,7 @@ var sessionList = new ArrayList;
 io.on('connection', function (socket) {
     //console.log('a user connected');
     var sessionId =uniqueSession(sessionList)
-
+    
     socket.on('chat message', function (text) {
 
         var apiaiReq = apiai.textRequest(text, {
@@ -45,6 +44,7 @@ io.on('connection', function (socket) {
         apiaiReq.end();
     });
 });
+
 app.use(function (req, res, next) {
     // do logging
     console.log('Something is happening.');

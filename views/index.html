@@ -32,8 +32,8 @@
 </div>
 <form action="">
     <textarea type="text" id="m" placeholder="Fammi una domanda..." autocomplete="off" rows="1" disabled="true"></textarea>
-  <img src="img/mic.png" onclick="speak();">
-    <button>Invia</button>
+  <img src="img/mic.png"  id="mic" disabled="true" onclick="speak();">
+    <button id="invia" disabled="true">Invia</button>
 </form>
 <script src="/socket.io/socket.io.js"></script>
 <script src="https://code.jquery.com/jquery-1.11.1.js"></script>

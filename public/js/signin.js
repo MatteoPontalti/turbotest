@@ -22,4 +22,7 @@ var googleUser = {};
           alert(JSON.stringify(error, undefined, 2));
         });
     document.getElementById('m').disabled=false;
+    document.getElementById('mic').disabled=false;
+    document.getElementById('invia').disabled=false;
+
   }
